@@ -7,14 +7,14 @@ const items = [
   {
     id: 1,
     title: "PIPER 🎵",
-    img: "/PIPER-pic.png",
+    img: "./PIPER-pic.png",
     desc: "PIPER is a song recommendation system that utilizes the Spotify API to provide users with personalized song recommendations based on their Mood, preferences and listening history.",
     link: "https://piper-spotify.streamlit.app",
   },
   {
     id: 2,
     title: "Rescue The Princess Game",
-    img: "/Designer.png",
+    img: "./Designer.png",
     desc: "The Rescue the Princess game is an exciting project implemented in the C programming language, incorporating the Depth-First Search (DFS) algorithm. It gives optimal path for Mario to save the princess with given no. of monsters. In this Game the monsters are intelligent that means when Mario moves one step, monsters also move one step in the direction of princess or Mario depending upon their distance from them.",
     link: "https://github.com/VyankateshD206/ICS1010_Project.git",
   
@@ -22,7 +22,7 @@ const items = [
   {
     id: 3,
     title: "Arduino Fibre Optics Communication",
-    img: "/Arduino.png",
+    img: "./Arduino.png",
     desc: "Arduino Fibre Optics Communication project was presented at the Project Expo 2023 of EEL 1010 Introduction to electrical engineering which uses Arduino Uno, LDR sensor and glass tube to transmit data from one device to another.",
     
   },

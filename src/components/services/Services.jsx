@@ -54,7 +54,7 @@ const Services = () => {
             whileHover={{ scale: 1.1 }} // Zoom in on hover
             whileTap={{ scale: 0.9 }}   // Slightly shrink on tap
         >
-            <img src="/working_man.jpg" alt="" />
+            <img src="./working_man.jpg" alt="" />
         </motion.div>
                
       </motion.div>
