@@ -77,7 +77,7 @@ const Contact = () => {
              data-type="VERTICAL"
              data-vanity="vyankatesh-deshpande-060a22289"
              data-version="v1">
-          <a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/vyankatesh-deshpande-060a22289?trk=profile-badge">Vyankatesh Deshpande</a>
+          <a className="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/vyankatesh-deshpande-060a22289?trk=profile-badge"></a>
         </div>
       </motion.div>
       <div className="formContainer">
