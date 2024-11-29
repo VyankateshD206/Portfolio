@@ -7,32 +7,39 @@ const items = [
   {
     id: 1,
     title: "PIPER 🎵",
+    subtitle: "ML Project",
     img: "./PIPER-pic.png",
     desc: "PIPER is a song recommendation system that utilizes the Spotify API to provide users with personalized song recommendations based on their Mood, preferences and listening history.",
     link: "https://piper-spotify.streamlit.app",
   },
   {
     id: 2,
-    title: "Rescue The Princess Game",
-    img: "./Designer.png",
-    desc: "The Rescue the Princess game is an exciting project implemented in the C programming language, incorporating the Depth-First Search (DFS) algorithm. It gives optimal path for Mario to save the princess with given no. of monsters. In this Game the monsters are intelligent that means when Mario moves one step, monsters also move one step in the direction of princess or Mario depending upon their distance from them.",
-    link: "https://github.com/VyankateshD206/ICS1010_Project.git",
-  
+    title: "NetViz: Computer Network Visualizer",
+    subtitle: "DSA Course Project",
+    img: "./NetViz-pic.png",
+    desc: "Developed a tool using C++ and DSA to simulate computer network operations, enabling users to design custom network topologies through an intuitive drag-and-drop interface and provided visual representation of data packet transmission.",
+    link: "https://github.com/VyankateshD206/NetViz",
   },
   {
     id: 3,
-    title: "Arduino Fibre Optics Communication",
-    img: "./Arduino.png",
-    desc: "Arduino Fibre Optics Communication project was presented at the Project Expo 2023 of EEL 1010 Introduction to electrical engineering which uses Arduino Uno, LDR sensor and glass tube to transmit data from one device to another.",
-    
+    title: "IITJ Hostel Allocation Website",
+    subtitle: "MERN stack Project",
+    img: "./IITJ_Hostel.jpg",
+    desc: "Developed a hostel room allocation website using the MERN stack for efficient room assignment, enabling students to view available rooms and apply easily.",
+    link: "https://iitj-hostel-allocation-frontend.vercel.app/",
   },
+
   {
     id: 4,
-    title: "JunkMate Android App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Work in progress.",
-    
+    title: "Rescue The Princess Game",
+    subtitle: "ICS Course Project in C language",
+    img: "./Designer.png",
+    desc: "Created a C-based game using the Depth-First Search (DFS) algorithm to determine the optimal path for Mario to rescue the princess.",
+    link: "https://github.com/VyankateshD206/ICS1010_Project.git",
+  
   },
+  
+  
 ];
 
 const Single = ({ item }) => {
@@ -53,6 +60,7 @@ const Single = ({ item }) => {
           </div>
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
+            <h3 style={{color: 'orange'}}>{item.subtitle}</h3>
             <p>{item.desc}</p>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <button>See Demo</button>
