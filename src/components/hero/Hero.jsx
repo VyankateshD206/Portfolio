@@ -53,18 +53,23 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Web developer, CP and AI/ML enthusiast
           </motion.h1>
-          <motion.div  variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Projects
-            </motion.button>
-            <motion.button variants={textVariants}>
+          <motion.div variants={textVariants} className="buttons" style={{ position: 'relative', zIndex: 10 }}>
             <motion.a 
               variants={textVariants}
-             id="contactButton">
+              href={`https://drive.google.com/file/d/12GBO5riyrN3GR6-A-wi2snZ72WkELyWI/view?usp=sharing`}
+              id="portfolioButton"
+              style={{ pointerEvents: 'auto' }}
+            >
+              Get CV
+            </motion.a>
+            <motion.a 
+              variants={textVariants}
+              href={`#${"Contact"}`}
+              id="contactButton"
+              style={{ pointerEvents: 'auto' }}
+            >
               Contact Me
             </motion.a>
-            </motion.button>
-
           </motion.div>
           <motion.img
             variants={textVariants}
