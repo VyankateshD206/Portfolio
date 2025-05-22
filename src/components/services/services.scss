@@ -109,6 +109,95 @@
       height: 350px;
     }
     
+    .aboutText {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.7;
+      text-align: center;
+      color: #e0e0e0;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      @include mobile {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 16px;
+        line-height: 1.5;
+        word-break: break-word;
+      }
+
+      span[role="img"] {
+        font-size: 1.2em;
+        vertical-align: middle;
+      }
+
+      .hide-on-mobile {
+        @include mobile {
+          display: none;
+        }
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+
+    .aboutImage {
+      padding-top: 30px;
+      padding-bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 350px;
+        height: 350px;
+        border-radius: 30px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        object-fit: cover;
+        transition: box-shadow 0.3s;
+
+        &:hover {
+          box-shadow: 0 16px 40px 0 rgba(255, 152, 0, 0.25);
+        }
+
+        @include mobile {
+          width: 120px;
+          height: 120px;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    .connectBtn {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 18px 40px;
+      border-radius: 30px;
+      background-color: orange;
+      color: #222;
+      border: none;
+      font-size: 22px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(255, 152, 0, 0.15);
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        background: #ff9800;
+        color: #fff;
+        box-shadow: 0 8px 32px rgba(255, 152, 0, 0.25);
+      }
+
+      @include mobile {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+        width: 90vw;
+        max-width: 250px;
+      }
+    }
   }
   .listContainer {
     flex: 2;

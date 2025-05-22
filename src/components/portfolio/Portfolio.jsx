@@ -38,6 +38,15 @@ const items = [
     link: "https://github.com/VyankateshD206/ICS1010_Project.git",
   
   },
+  {
+    id: 5,
+    title: "EatWise 🍽️",
+    subtitle: "AI-Powered Food Classification and Nutrition Analysis App",
+    img: "./eatwise.png",
+    desc: "Built an AI-powered Android app using Kotlin and YOLOv8 to classify 30+ Indian food items in real-time, mapping predictions to nutritional values to address gaps in global nutrition apps.",
+    link: "https://github.com/VyankateshD206/DC_EatWise",
+  
+  },
   
   
 ];

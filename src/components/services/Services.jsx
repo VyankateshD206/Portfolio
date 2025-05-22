@@ -19,6 +19,18 @@ const variants = {
   },
 };
 
+const textVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1.2 } },
+};
+
+const highlightStyle = { color: "orange", fontWeight: 600 };
+
 const Services = () => {
   const ref = useRef();
 
@@ -29,8 +41,6 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
@@ -44,19 +54,74 @@ const Services = () => {
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>About :</motion.b>
+            <motion.b whileHover={{ color: "orange" }}>About :</motion.b>
           </h1>
-        
         </div>
-        <p >I'm currently pursuing a B.Tech in Computer Science and Engineering, with a keen interest in Machine Learning and Artificial Intelligence. I am passionate about exploring the latest advancements in these fields and am always eager to learn and expand my knowledge. I strive to apply my skills and enthusiasm to contribute to innovative projects and technological solutions.</p>
-        
         <motion.div
-            whileHover={{ scale: 1.1 }} // Zoom in on hover
-            whileTap={{ scale: 0.9 }}   // Slightly shrink on tap
+          className="aboutText"
+          variants={textVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
-            <img src="./working_man.jpg" alt="" />
+          <p>
+            <span role="img" aria-label="sparkles">
+              ✨
+            </span>{" "}
+            <span style={highlightStyle}>I’m Vyankatesh Deshpande</span>, a
+            Computer Science undergrad at IIT Jodhpur who finds joy in building
+            tech that actually helps people.
+            <br />
+            <span role="img" aria-label="robot">
+              🤖
+            </span>{" "}
+            Whether it's an{" "}
+            <span style={highlightStyle}>AI</span> that understands your mood and
+            curates songs for you, a smoother hostel room allocation experience,
+            or an app that keeps your nutrition in check—I love turning real
+            problems into intuitive solutions.
+            <br />
+            <br />
+            <span className="hide-on-mobile">
+              <span role="img" aria-label="bulb">
+                💡
+              </span>{" "}
+              My projects are driven by{" "}
+              <span style={highlightStyle}>empathy</span> and{" "}
+              <span style={highlightStyle}>impact</span>. I enjoy blending machine
+              learning, full-stack development, and clean design to create tools
+              that make life a little easier, smarter, or just more fun for users.
+              <br />
+              <br />
+              <span role="img" aria-label="rocket">
+                🚀
+              </span>{" "}
+              Currently exploring the intersection of{" "}
+              <span style={highlightStyle}>AI</span>,{" "}
+              <span style={highlightStyle}>product thinking</span>, and{" "}
+              <span style={highlightStyle}>user-centered design</span>. I believe
+              tech isn't just about code—it's about people.
+              <br />
+              <br />
+              <span role="img" aria-label="handshake">
+                🤝
+              </span>{" "}
+              Let’s build things that matter. Always up for collaborating, solving
+              cool problems, or geeking out over new ideas!
+            </span>
+          </p>
         </motion.div>
-               
+        <motion.div
+          className="aboutImage"
+          variants={imageVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <img src="./working_man.jpg" alt="Working man" />
+        </motion.div>
       </motion.div>
       {/* <motion.div className="listContainer" variants={variants}>
               

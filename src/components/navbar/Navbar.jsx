@@ -16,7 +16,7 @@ const Navbar = () => {
            Portfolio Website
         </motion.span>
         <div className="social">
-          <a href="https://www.linkedin.com/in/vyankatesh-deshpande-060a22289/">
+          <a href="https://www.linkedin.com/in/vyankatesh-deshpande/">
             <img src="./linkedin.png" alt="" />
           </a>
           <a href="https://www.instagram.com/vyankatesh_206/">
