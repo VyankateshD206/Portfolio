@@ -10,7 +10,9 @@ const items = [
     subtitle: "ML Project",
     img: "./PIPER-pic.png",
     desc: "PIPER is a song recommendation system that utilizes the Spotify API to provide users with personalized song recommendations based on their Mood, preferences and listening history.",
-    link: "https://piper-spotify.streamlit.app",
+    link: "https://github.com/VyankateshD206/PIPER_Spotify_API.git",
+    videoLink: "https://drive.google.com/file/d/1c5e4FXZvblGwtXZiFTULoIIc0BVBHNOV/view?usp=sharing",
+    siteLink: "https://piper-spotify.streamlit.app/",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const items = [
     img: "./NetViz-pic.png",
     desc: "Developed a tool using C++ and DSA to simulate computer network operations, enabling users to design custom network topologies through an intuitive drag-and-drop interface and provided visual representation of data packet transmission.",
     link: "https://github.com/VyankateshD206/NetViz",
+    videoLink: "https://drive.google.com/file/d/1rsJkzfiBtY1UGg8KZSpZR7iXEr8NSxp-/view?usp=drive_link",
   },
   {
     id: 3,
@@ -27,15 +30,18 @@ const items = [
     img: "./IITJ_Hostel.jpg",
     desc: "Developed a hostel room allocation website using the MERN stack for efficient room assignment, enabling students to view available rooms and apply easily.",
     link: "https://iitj-hostel-allocation-frontend.vercel.app/",
+    videoLink: "https://drive.google.com/file/u/1/d/1ju10kBkpoge49QBAHFD6AvqKHzXLf2Uv/view?usp=sharing",
+    siteLink: "https://iitj-hostel-allocation-frontend.vercel.app/",
   },
-
   {
     id: 4,
-    title: "Rescue The Princess Game",
-    subtitle: "ICS Course Project in C language",
-    img: "./Designer.png",
-    desc: "Created a C-based game using the Depth-First Search (DFS) algorithm to determine the optimal path for Mario to rescue the princess.",
-    link: "https://github.com/VyankateshD206/ICS1010_Project.git",
+    title: "Linguistix 🗣️",
+    subtitle: "CSL2050 - Pattern Recognition and Machine Learning Project",
+    img: "./Linguistic.png",
+    desc: "Linguistix is an advanced speaker recognition system that identifies individuals based on their unique vocal characteristics. Utilizing cutting-edge machine learning and deep learning techniques, it ensures accurate and efficient voice-based authentication and verification.",
+    link: "https://github.com/VyankateshD206/Linguistix",
+    videoLink: "https://youtu.be/yORB3cY9WDA",
+    siteLink: "http://34.121.3.96:8080/",
   
   },
   {
@@ -45,8 +51,19 @@ const items = [
     img: "./eatwise.png",
     desc: "Built an AI-powered Android app using Kotlin and YOLOv8 to classify 30+ Indian food items in real-time, mapping predictions to nutritional values to address gaps in global nutrition apps.",
     link: "https://github.com/VyankateshD206/DC_EatWise",
+    videoLink: "https://drive.google.com/file/d/1CZezPVNW4TUdtGoMYi2hSrQJrGQOKbJt/view",
   
   },
+  {
+    id: 6,
+    title: "Rescue The Princess Game 👸",
+    subtitle: "ICS Course Project in C language",
+    img: "./Designer.png",
+    desc: "Created a C-based game using the Depth-First Search (DFS) algorithm to determine the optimal path for Mario to rescue the princess.",
+    link: "https://github.com/VyankateshD206/ICS1010_Project.git",
+  
+  },
+  
   
   
 ];
@@ -71,9 +88,21 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <h3 style={{color: 'orange'}}>{item.subtitle}</h3>
             <p>{item.desc}</p>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>See Demo</button>
-            </a>
+            <div className="buttonGroup">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <button>GitHub</button>
+              </a>
+              {item.videoLink && (
+                <a href={item.videoLink} target="_blank" rel="noopener noreferrer">
+                  <button>See Video</button>
+                </a>
+              )}
+              {item.siteLink && (
+                <a href={item.siteLink} target="_blank" rel="noopener noreferrer">
+                  <button>Visit Site</button>
+                </a>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>
